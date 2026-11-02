@@ -53,6 +53,13 @@ export function businessSchema() {
         itemOffered: { "@type": "Service", name: p.label, url: `${site.url}/${p.slug}` },
       })),
     },
+    sameAs: [
+      // Add social media profiles here if available
+      // "https://www.facebook.com/...",
+      // "https://www.instagram.com/...",
+      // "https://twitter.com/...",
+      // "https://www.youtube.com/...",
+    ],
   };
   if (site.open24x7) {
     s.openingHoursSpecification = {
@@ -110,12 +117,17 @@ export function serviceSchema(p: PageDef) {
   return {
     "@context": "https://schema.org",
     "@type": "Service",
+    serviceType: p.kind === "service" ? "MovingService" : "TransportService",
     name: p.h1,
-    serviceType: p.label,
     description: p.description,
     url: `${site.url}/${p.slug}`,
     provider: { "@id": bizId },
     areaServed: p.kind === "area" ? p.h1.replace("Packers and Movers in ", "") : "Sagar, Madhya Pradesh, India",
+    availableChannel: {
+      "@type": "ServiceChannel",
+      serviceType: p.kind === "service" ? "MovingService" : "TransportService",
+      serviceUrl: `${site.url}/${p.slug}`,
+    },
   };
 }
 

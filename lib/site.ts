@@ -31,7 +31,7 @@ export const site: Site = {
   shortName: "Shyam Packers & Movers",
   tagline: "Safe Move • Secure Future",
   // TODO: your real domain (or set NEXT_PUBLIC_SITE_URL in Vercel)
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://shyam-packers-movers.vercel.app",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://shyam-movers.vercel.app",
   phones: [
     { intl: "919243200382", display: "92432 00382" },
     { intl: "919516750418", display: "95167 50418" },

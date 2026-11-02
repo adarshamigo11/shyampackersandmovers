@@ -26,10 +26,30 @@ export const metadata: Metadata = {
     "packers and movers makronia",
     "goods transport sagar",
     "sagar to bhopal transport",
+    "packers movers sagar madhya pradesh",
+    "local packers and movers sagar",
+    "affordable packers movers sagar",
+    "long distance packers movers sagar",
+    "household shifting sagar",
+    "commercial moving sagar",
+    "furniture movers sagar",
   ],
   applicationName: site.name,
-  authors: [{ name: site.name }],
-  alternates: { canonical: "/" },
+  authors: [{ name: site.name, url: site.url }],
+  creator: site.name,
+  publisher: site.name,
+  formatDetection: {
+    email: true,
+    address: true,
+    telephone: true,
+  },
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-IN": "/",
+      "hi-IN": "/",
+    },
+  },
   openGraph: {
     type: "website",
     locale: "en_IN",
@@ -45,7 +65,16 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
   },
-  formatDetection: { telephone: true },
+  other: {
+    "geo.region": "IN-MP",
+    "geo.placename": "Sagar, Madhya Pradesh",
+    "geo.position": `${site.geo.lat};${site.geo.lng}`,
+    ICBM: `${site.geo.lat}, ${site.geo.lng}`,
+    "revisit-after": "7 days",
+    rating: "General",
+    distribution: "Global",
+  },
+  category: "business",
 };
 
 export const viewport: Viewport = {
