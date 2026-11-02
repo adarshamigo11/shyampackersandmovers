@@ -43,7 +43,6 @@ export default function Header() {
               style={{ background: "#050B2E" }}
             >
               <ul className="space-y-0.5 text-[15px] font-semibold">
-                <li><Link href="/" className="block rounded-lg px-3 py-2.5 hover:bg-white/10">Home</Link></li>
                 {servicePages.map((p) => (
                   <li key={p.slug}>
                     <Link href={`/${p.slug}`} className="block rounded-lg px-3 py-2.5 hover:bg-white/10">

@@ -54,11 +54,12 @@ export function businessSchema() {
       })),
     },
     sameAs: [
-      // Add social media profiles here if available
-      // "https://www.facebook.com/...",
-      // "https://www.instagram.com/...",
-      // "https://twitter.com/...",
-      // "https://www.youtube.com/...",
+      // Add your social media profiles here
+      // "https://www.facebook.com/shyampackersandmovers",
+      // "https://www.instagram.com/shyampackersandmovers",
+      // "https://twitter.com/shyammovers",
+      // "https://www.youtube.com/@shyampackersandmovers",
+      // "https://www.linkedin.com/company/shyampackersandmovers",
     ],
   };
   if (site.open24x7) {
