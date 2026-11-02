@@ -73,6 +73,244 @@ const services: PageDef[] = [
     keywords: ["packers and movers in sagar", "best packers and movers in sagar", "movers and packers sagar", "shyam packers and movers"],
   },
   {
+    slug: "house-shifting",
+    kind: "service",
+    label: "House Shifting",
+    title: "House Shifting Services in Sagar | Safe Home Relocation – Shyam Packers",
+    h1: "House Shifting Services in Sagar",
+    description:
+      "Professional house shifting in Sagar, MP – safe packing, loading, transport and unloading for homes of all sizes. Shyam Packers and Movers, Makronia. Call 92432 00382.",
+    icon: "home",
+    intro: [
+      `Moving home should not be stressful. ${site.name} takes care of your house shifting in Sagar from start to finish — packing every room, loading carefully, transporting safely and unloading at your new home.`,
+      "We handle furniture, beds, sofas, appliances, kitchen items, clothes and fragile decor with proper packing material, so your belongings arrive in the condition they left.",
+    ],
+    highlights: [
+      { title: "Room-by-room packing", text: "Kitchen, bedrooms, living room and more packed with suitable material." },
+      { title: "Furniture & appliances", text: "Careful handling of beds, wardrobes, sofas, fridge, TV and washing machine." },
+      { title: "Fragile items", text: "Extra protection for glassware, decor and electronics." },
+      { title: "Unloading & arranging", text: "We unload and place items so you can settle in quickly." },
+      { title: "Any home size", text: "From a single room or 1BHK to a large house." },
+      { title: "Within Sagar or beyond", text: "Local shifting and long-distance home relocation." },
+    ],
+    faqs: [
+      {
+        q: "How far in advance should I book house shifting?",
+        a: "The earlier the better, especially around month-ends and festival periods. Short-notice moves are possible too — just call and ask.",
+      },
+      {
+        q: "Do you dismantle and refit furniture?",
+        a: "Yes, we can dismantle large furniture before moving and help set it up again at your new place. Mention it when you call.",
+      },
+      ...commonFaqs("house shifting in Sagar"),
+    ],
+    keywords: ["house shifting in sagar", "home shifting sagar", "household shifting sagar mp", "local shifting sagar", "house relocation sagar"],
+  },
+  {
+    slug: "office-shifting",
+    kind: "service",
+    label: "Office Shifting",
+    title: "Office Shifting Services in Sagar | Commercial Relocation – Shyam Packers",
+    h1: "Office & Commercial Shifting in Sagar",
+    description:
+      "Expert office and commercial shifting in Sagar, MP – planned packing and moving with minimal downtime. Shyam Packers and Movers, Makronia. Call 92432 00382.",
+    icon: "building",
+    intro: [
+      `Moving your office, clinic or shop? ${site.name} plans commercial relocation in Sagar so your business is back up quickly. We pack and move desks, chairs, cabinets, computers, files and stock with care.`,
+      "Share your timing and layout needs and we will plan the move to keep disruption low — including after-hours or weekend shifting where possible.",
+    ],
+    highlights: [
+      { title: "Minimal downtime", text: "Planned packing, moving and unloading to get you working again fast." },
+      { title: "IT & electronics", text: "Careful handling of computers, printers and equipment." },
+      { title: "Files & records", text: "Organised packing so documents stay in order." },
+      { title: "Shop & stock shifting", text: "Retail stock, racks and display material moved safely." },
+      { title: "Flexible timing", text: "Discuss early-morning, evening or holiday slots with us." },
+      { title: "Local & intercity", text: "Within Sagar or to another city." },
+    ],
+    faqs: [
+      {
+        q: "Can you shift our office outside working hours?",
+        a: "Often yes. Call us with your preferred timing and we will confirm what is possible.",
+      },
+      {
+        q: "Do you move shops and godowns too?",
+        a: "Yes — shops, showrooms, godowns and clinics, with trained staff and suitable vehicles.",
+      },
+      ...commonFaqs("office shifting in Sagar"),
+    ],
+    keywords: ["office shifting in sagar", "shop shifting sagar", "commercial shifting sagar", "business relocation sagar", "office movers sagar"],
+  },
+  {
+    slug: "local-shifting",
+    kind: "service",
+    label: "Local Shifting",
+    title: "Local Shifting Services in Sagar | Same City Movers – Shyam Packers",
+    h1: "Local Shifting Services in Sagar",
+    description:
+      "Fast and affordable local shifting in Sagar, MP – house and office relocation within the city. Shyam Packers and Movers, Makronia. Call 92432 00382.",
+    icon: "home",
+    intro: [
+      `Need to move within Sagar city? ${site.name} provides quick and efficient local shifting services for homes and businesses. Whether you are shifting to a new colony or just across the street, we handle it professionally.`,
+      "Our local team knows Sagar inside out — from Makronia to Bina Road, from Gola Bazaar to Dhawai Bazaar. We plan the move quickly and execute it smoothly.",
+    ],
+    highlights: [
+      { title: "Quick turnaround", text: "Same-day or next-day local shifting available." },
+      { title: "Local expertise", text: "We know all Sagar routes and neighborhoods." },
+      { title: "Affordable rates", text: "Competitive pricing for local moves." },
+      { title: "Complete service", text: "Packing, loading, transport, unloading and arranging." },
+      { title: "Any size move", text: "Single room to full house or office." },
+      { title: "Flexible timing", text: "Work around your schedule." },
+    ],
+    faqs: [
+      {
+        q: "How quickly can you do a local shift?",
+        a: "Most local shifts in Sagar can be completed in a single day. Call us to discuss your specific requirements.",
+      },
+      {
+        q: "Do you provide packing materials for local moves?",
+        a: "Yes, we provide all necessary packing materials and handle the packing for you.",
+      },
+      ...commonFaqs("local shifting in Sagar"),
+    ],
+    keywords: ["local shifting in sagar", "same city movers sagar", "local packers movers sagar", "within city shifting sagar"],
+  },
+  {
+    slug: "domestic-relocation",
+    kind: "service",
+    label: "Domestic Relocation",
+    title: "Domestic Relocation Services | Pan-India Moving – Shyam Packers",
+    h1: "Domestic Relocation from Sagar",
+    description:
+      "Trusted domestic relocation services from Sagar to any city in India – safe packing, secure transport and timely delivery. Shyam Packers and Movers. Call 92432 00382.",
+    icon: "route",
+    intro: [
+      `Relocating to another city? ${site.name} provides professional domestic relocation services from Sagar to any destination in India. We handle your household goods with care and ensure timely delivery.`,
+      "From Sagar to Bhopal, Delhi, Mumbai, Bangalore or any other city — we plan the route, pack securely, load carefully and deliver safely to your new home.",
+    ],
+    highlights: [
+      { title: "Pan-India coverage", text: "We move to any city in India from Sagar." },
+      { title: "Secure packing", text: "High-quality materials for long-distance protection." },
+      { title: "Trained staff", text: "Experienced in handling household goods." },
+      { title: "On-time delivery", text: "We plan and stick to the schedule." },
+      { title: "Door-to-door service", text: "Pickup from your Sagar address to new doorstep." },
+      { title: "Tracking support", text: "Regular updates during transit." },
+    ],
+    faqs: [
+      {
+        q: "Which cities do you serve for domestic relocation?",
+        a: "We serve all major cities in India from Sagar, including Bhopal, Indore, Jabalpur, Delhi, Mumbai, Bangalore, Chennai, Kolkata and more.",
+      },
+      {
+        q: "How long does domestic relocation take?",
+        a: "It depends on the distance. Local cities take 1-3 days, while distant cities may take 7-14 days. We provide a timeline before booking.",
+      },
+      ...commonFaqs("domestic relocation from Sagar"),
+    ],
+    keywords: ["domestic relocation sagar", "pan india movers sagar", "intercity moving sagar", "long distance home shifting", "sagar to other city movers"],
+  },
+  {
+    slug: "car-transportation",
+    kind: "service",
+    label: "Car Transportation",
+    title: "Car Transportation Services from Sagar | Safe Vehicle Transport – Shyam",
+    h1: "Car Transportation from Sagar",
+    description:
+      "Safe and reliable car transportation from Sagar to any city in India – secure loading, insured transport and timely delivery. Shyam Packers and Movers. Call 92432 00382.",
+    icon: "truck",
+    intro: [
+      `Need to transport your car from Sagar? ${site.name} provides safe and professional car transportation services to any destination in India. We use specialized car carriers and ensure your vehicle reaches in the same condition it left.`,
+      "Whether you are relocating to another city or need to send your car to a family member, we handle all types of vehicles — cars, SUVs, bikes and more.",
+    ],
+    highlights: [
+      { title: "Specialized car carriers", text: "Purpose-built vehicles for safe car transport." },
+      { title: "Secure loading", text: "Professional loading with proper equipment." },
+      { title: "Pan-India service", text: "Transport to any city in India." },
+      { title: "Insured transport", text: "Your vehicle is protected during transit." },
+      { title: "Door-to-door pickup", text: "We collect from your location and deliver to destination." },
+      { title: "Regular updates", text: "Stay informed about your vehicle's location." },
+    ],
+    faqs: [
+      {
+        q: "How do you transport cars safely?",
+        a: "We use specialized car carriers with proper loading equipment. The vehicles are secured and protected during transit.",
+      },
+      {
+        q: "Do you transport bikes and two-wheelers?",
+        a: "Yes, we transport bikes, scooters and two-wheelers along with cars.",
+      },
+      ...commonFaqs("car transportation from Sagar"),
+    ],
+    keywords: ["car transportation from sagar", "vehicle transport sagar", "car carrier sagar", "car movers sagar", "bike transportation sagar"],
+  },
+  {
+    slug: "bike-transportation",
+    kind: "service",
+    label: "Bike Transportation",
+    title: "Bike Transportation Services from Sagar | Two-Wheeler Transport – Shyam",
+    h1: "Bike Transportation from Sagar",
+    description:
+      "Professional bike and two-wheeler transportation from Sagar to any city – safe packing, secure loading and timely delivery. Shyam Packers and Movers. Call 92432 00382.",
+    icon: "truck",
+    intro: [
+      `Want to transport your bike from Sagar? ${site.name} provides reliable bike transportation services across India. We pack your bike securely and transport it safely to your destination.`,
+      "Whether you are relocating or sending your bike to someone, we handle all types of two-wheelers — bikes, scooters, motorcycles of all brands and models.",
+    ],
+    highlights: [
+      { title: "Secure packing", text: "Proper padding and protection for your bike." },
+      { title: "Safe loading", text: "Professional handling during loading and unloading." },
+      { title: "All-India service", text: "Transport to any city in India." },
+      { title: "Affordable rates", text: "Competitive pricing for bike transport." },
+      { title: "Quick delivery", text: "Fast and reliable service." },
+      { title: "All bike types", text: "We handle all brands and models." },
+    ],
+    faqs: [
+      {
+        q: "How do you pack bikes for transport?",
+        a: "We use proper padding, wrapping and securing materials to protect your bike during transit. Critical parts are covered and the bike is secured in the vehicle.",
+      },
+      {
+        q: "Can you transport scooters and motorcycles?",
+        a: "Yes, we transport all types of two-wheelers — bikes, scooters, motorcycles of all brands and models.",
+      },
+      ...commonFaqs("bike transportation from Sagar"),
+    ],
+    keywords: ["bike transportation from sagar", "two-wheeler transport sagar", "scooter transport sagar", "motorcycle movers sagar", "bike carrier sagar"],
+  },
+  {
+    slug: "packing-unpacking",
+    kind: "service",
+    label: "Packing & Unpacking",
+    title: "Packing & Unpacking Services in Sagar | Professional Packing – Shyam",
+    h1: "Packing & Unpacking Services in Sagar",
+    description:
+      "Professional packing and unpacking services in Sagar, MP – quality materials, trained staff and careful handling. Shyam Packers and Movers, Makronia. Call 92432 00382.",
+    icon: "package",
+    intro: [
+      `Need help with packing and unpacking? ${site.name} provides professional packing services in Sagar using high-quality materials and proven techniques. We pack everything from kitchen items to furniture, electronics to fragile decor.`,
+      "Our trained staff use appropriate packing materials for each item type — cartons, bubble wrap, packing paper, tape and more. We ensure your belongings are protected during the move.",
+    ],
+    highlights: [
+      { title: "Quality materials", text: "Cartons, bubble wrap, packing paper and tape." },
+      { title: "Room-by-room packing", text: "Kitchen, bedrooms, living room and more." },
+      { title: "Fragile item protection", text: "Special care for glassware, electronics and decor." },
+      { title: "Furniture packing", text: "Beds, wardrobes, sofas and tables." },
+      { title: "Unpacking service", text: "We unpack and arrange at your new place." },
+      { title: "Labour-only option", text: "Hire staff for packing without transport." },
+    ],
+    faqs: [
+      {
+        q: "What packing materials do you use?",
+        a: "We use high-quality cartons, bubble wrap, packing paper, foam sheets and strong tape. Each item type gets appropriate protection.",
+      },
+      {
+        q: "Do you unpack at the destination?",
+        a: "Yes, we provide unpacking services and can help arrange items at your new location.",
+      },
+      ...commonFaqs("packing and unpacking in Sagar"),
+    ],
+    keywords: ["packing service sagar", "unpacking service sagar", "professional packing sagar", "packing materials sagar", "house packing service"],
+  },
+  {
     slug: "transport-in-sagar",
     kind: "service",
     label: "Transport in Sagar",
