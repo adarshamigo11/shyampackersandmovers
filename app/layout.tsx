@@ -75,6 +75,7 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
   },
   other: {
+    "google-site-verification": "google18a44bfde2e99a64.html",
     "geo.region": "IN-MP",
     "geo.placename": "Sagar, Madhya Pradesh",
     "geo.position": `${site.geo.lat};${site.geo.lng}`,
