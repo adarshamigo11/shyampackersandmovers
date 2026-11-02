@@ -26,12 +26,12 @@ export default function About() {
         <p className="mt-2 font-semibold uppercase tracking-wider text-white/70">{site.tagline}</p>
 
         <Image
-          src="/shyam-banner.jpg"
-          alt={`${site.name} logo banner`}
+          src="/images/office-commercial-moving.jpg"
+          alt={`${site.name} professional team handling office and commercial shifting in Sagar, Makronia – trained staff with proper packing material`}
           width={1536}
           height={1024}
           sizes="(min-width:896px) 896px, 100vw"
-          className="mt-6 w-full rounded-3xl border border-gold/30"
+          className="mt-6 w-full rounded-3xl border border-gold/30 shadow-[0_0_40px_rgba(255,200,61,0.12)]"
         />
 
         <div className="mt-8 space-y-4 text-lg text-white/85">
@@ -49,6 +49,31 @@ export default function About() {
             We serve Sagar city, Makronia, Rajakhedi, Bina, Khurai, Rehli, Damoh, Bhopal, Vidisha and routes across India.
           </p>
         </div>
+
+        {/* Visual image gallery showcasing our work */}
+        <div className="mt-10 grid gap-6 sm:grid-cols-2">
+          <div className="overflow-hidden rounded-2xl border border-gold/30 shadow-lg">
+            <Image
+              src="/images/furniture-packing-protection.jpg"
+              alt="Professional furniture packing and protection service by Shyam Packers and Movers in Sagar – careful wrapping with quality material"
+              width={600}
+              height={400}
+              sizes="(min-width:640px) 50vw, 100vw"
+              className="h-56 w-full object-cover sm:h-64"
+            />
+          </div>
+          <div className="overflow-hidden rounded-2xl border border-gold/30 shadow-lg">
+            <Image
+              src="/images/house-shifting-loading.jpg"
+              alt="Safe loading of household goods during house shifting in Sagar by Shyam Packers and Movers – trained staff with proper equipment"
+              width={600}
+              height={400}
+              sizes="(min-width:640px) 50vw, 100vw"
+              className="h-56 w-full object-cover sm:h-64"
+            />
+          </div>
+        </div>
+
         <CallPrompt heading="Talk to us about your move" sub="Free quote on the call" />
       </div>
       <JsonLd

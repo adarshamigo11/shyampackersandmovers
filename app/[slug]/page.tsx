@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CheckCircle2, MessageCircle } from "lucide-react";
@@ -36,9 +37,9 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
       description: p.description,
       siteName: site.name,
       locale: "en_IN",
-      images: [{ url: "/shyam-banner.jpg", width: 1536, height: 1024, alt: p.h1 }],
+      images: [{ url: p.image, width: 1536, height: 1024, alt: p.imageAlt }],
     },
-    twitter: { card: "summary_large_image", title: p.title, description: p.description, images: ["/shyam-banner.jpg"] },
+    twitter: { card: "summary_large_image", title: p.title, description: p.description, images: [p.image] },
   };
 }
 
@@ -75,6 +76,19 @@ export default function Page({ params }: { params: { slug: string } }) {
             ))}
           </div>
 
+          {/* SEO-optimised hero image for the service/area page */}
+          <div className="mt-8 overflow-hidden rounded-2xl border border-gold/30 shadow-[0_0_40px_rgba(255,200,61,0.15)]">
+            <Image
+              src={p.image}
+              alt={p.imageAlt}
+              width={1200}
+              height={675}
+              priority
+              sizes="(min-width:1024px) 1200px, 100vw"
+              className="h-auto w-full object-cover"
+            />
+          </div>
+
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">
             <CallButton pulse className="w-full sm:w-auto" />
             <a
@@ -103,6 +117,34 @@ export default function Page({ params }: { params: { slug: string } }) {
               </li>
             ))}
           </ul>
+
+          {/* Secondary SEO image in highlights section */}
+          <div className="mt-10 grid items-center gap-8 lg:grid-cols-2">
+            <div className="overflow-hidden rounded-2xl border border-gold/30 shadow-lg">
+              <Image
+                src={p.image}
+                alt={`${p.label} service in Sagar by Shyam Packers and Movers – ${p.imageAlt}`}
+                width={600}
+                height={400}
+                sizes="(min-width:1024px) 50vw, 100vw"
+                className="h-64 w-full object-cover sm:h-80"
+              />
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-white">Trusted {p.label.toLowerCase()} by Shyam Packers and Movers</h3>
+              <p className="mt-3 text-white/80">
+                Based in Makronia, Sagar, we deliver professional {p.label.toLowerCase()} with
+                trained staff, quality packing material and well-maintained vehicles. Our transparent
+                pricing and careful handling make us the preferred choice for families and businesses
+                across Sagar, Madhya Pradesh.
+              </p>
+              <p className="mt-3 text-white/80">
+                Call <strong className="text-gold">{site.phones[0].display}</strong> for a free quote
+                or WhatsApp us to discuss your {p.label.toLowerCase()} requirement.
+              </p>
+            </div>
+          </div>
+
           <CallPrompt heading={`Book ${p.label.toLowerCase()} today`} sub="Free quote · clear pricing · call or WhatsApp" />
         </div>
       </section>

@@ -39,6 +39,19 @@ export default function Home() {
       <section id="why-us" aria-labelledby="why-title" className="px-4 py-14">
         <div className="mx-auto max-w-6xl">
           <SectionHeading eyebrow="Why Choose Us" id="why-title" title="Why Shyam is the Best Packers and Movers in Sagar" />
+
+          {/* Visual banner image for Why Choose Us section */}
+          <div className="mt-6 overflow-hidden rounded-2xl border border-gold/30 shadow-[0_0_40px_rgba(255,200,61,0.12)]">
+            <Image
+              src="/images/stress-free-relocation.jpg"
+              alt="Stress-free relocation service by Shyam Packers and Movers, Makronia Sagar – safe packing, trained staff and on-time delivery"
+              width={1200}
+              height={500}
+              sizes="(min-width:1024px) 1200px, 100vw"
+              className="h-auto w-full object-cover"
+            />
+          </div>
+
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {why.map(({ icon: Icon, title, text }) => (
               <article key={title} className="glass rounded-2xl p-6">
@@ -54,6 +67,19 @@ export default function Home() {
       <section id="how-it-works" aria-labelledby="how-title" className="px-4 py-14">
         <div className="mx-auto max-w-6xl">
           <SectionHeading eyebrow="How It Works" id="how-title" title="Moving with Shyam is as Easy as 1-2-3-4" center />
+
+          {/* Visual image for How It Works section */}
+          <div className="mx-auto mt-6 max-w-3xl overflow-hidden rounded-2xl border border-gold/30 shadow-[0_0_40px_rgba(255,200,61,0.12)]">
+            <Image
+              src="/images/express-packers-movers-india.jpg"
+              alt="Express packers and movers in Sagar – Shyam Packers and Movers 4-step easy moving process: call, get quote, pack and load, deliver and unload"
+              width={900}
+              height={400}
+              sizes="(min-width:768px) 900px, 100vw"
+              className="h-auto w-full object-cover"
+            />
+          </div>
+
           <ol className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {steps.map((s, i) => (
               <li key={s.title} className="glass relative rounded-2xl p-6 pt-9">
@@ -78,6 +104,18 @@ export default function Home() {
             sub="Based at 8 Shankargarh Road, Makronia, Sagar — serving the whole region and running pan-India routes."
           />
           <AreaChips pages={areaPages} />
+
+          {/* Visual banner for areas served section */}
+          <div className="mt-8 overflow-hidden rounded-2xl border border-gold/30 shadow-[0_0_40px_rgba(255,200,61,0.12)]">
+            <Image
+              src="/images/domestic-relocation-service-india.jpg"
+              alt="Shyam Packers and Movers domestic relocation service from Sagar to all India – pan-India moving, transport and truck rental coverage"
+              width={1200}
+              height={450}
+              sizes="(min-width:1024px) 1200px, 100vw"
+              className="h-auto w-full object-cover"
+            />
+          </div>
         </div>
       </section>
 
@@ -98,12 +136,12 @@ export default function Home() {
             </p>
           </div>
           <Image
-            src="/shyam-wordmark.jpg"
-            alt="Shyam Packers and Movers logo"
+            src="/images/planning-moving-service.jpg"
+            alt="Shyam Packers and Movers team planning a professional household relocation in Sagar, Madhya Pradesh"
             width={1300}
             height={560}
             sizes="(min-width:1024px) 560px, 100vw"
-            className="w-full rounded-3xl border border-gold/30"
+            className="w-full rounded-3xl border border-gold/30 shadow-[0_0_40px_rgba(255,200,61,0.12)]"
           />
         </div>
       </section>

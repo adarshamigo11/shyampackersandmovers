@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Clock, MapPin, MessageCircle, Phone } from "lucide-react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CallPrompt from "@/components/CallPrompt";
@@ -72,6 +73,18 @@ export default function Contact() {
           >
             Open in Google Maps
           </a>
+        </div>
+
+        {/* Visual image for contact page SEO */}
+        <div className="mt-8 overflow-hidden rounded-2xl border border-gold/30 shadow-[0_0_40px_rgba(255,200,61,0.12)]">
+          <Image
+            src="/images/international-moving-services.jpg"
+            alt="Contact Shyam Packers and Movers at Makronia, Sagar – professional moving team ready to help with house shifting, office relocation and transport services"
+            width={800}
+            height={400}
+            sizes="(min-width:640px) 800px, 100vw"
+            className="h-auto w-full object-cover"
+          />
         </div>
       </section>
 

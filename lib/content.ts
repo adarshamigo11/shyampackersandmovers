@@ -12,6 +12,10 @@ export type PageDef = {
   h1: string;
   description: string; // meta description
   icon: IconKey;
+  /** SEO-optimised hero/feature image path (in /public/images/). */
+  image: string;
+  /** Alt text for the image – includes brand + keyword for SEO. */
+  imageAlt: string;
   intro: string[];
   highlights: { title: string; text: string }[];
   faqs: Faq[];
@@ -47,6 +51,8 @@ const services: PageDef[] = [
     description:
       "Shyam Packers and Movers, Makronia – trusted packers and movers in Sagar for house & office shifting, packing, loading, unloading and truck rental. Call 92432 00382.",
     icon: "package",
+    image: "/images/planning-moving-service.jpg",
+    imageAlt: "Shyam Packers and Movers – professional packers and movers in Sagar, Makronia planning a safe household relocation",
     intro: [
       `Looking for reliable packers and movers in Sagar? ${site.name} handles everything from packing your first box to unloading the last one at your new place. Our office is at ${site.address.street}, ${site.address.locality}, so we are close to you across Sagar city.`,
       "We pack with proper material, load with trained staff, move in well-kept trucks and unload and arrange with care. One call to us replaces the stress of coordinating labour, a vehicle and packing material separately.",
@@ -81,6 +87,8 @@ const services: PageDef[] = [
     description:
       "Professional house shifting in Sagar, MP – safe packing, loading, transport and unloading for homes of all sizes. Shyam Packers and Movers, Makronia. Call 92432 00382.",
     icon: "home",
+    image: "/images/house-shifting-professional.jpg",
+    imageAlt: "Professional house shifting service in Sagar by Shyam Packers and Movers – safe packing and loading of household goods",
     intro: [
       `Moving home should not be stressful. ${site.name} takes care of your house shifting in Sagar from start to finish — packing every room, loading carefully, transporting safely and unloading at your new home.`,
       "We handle furniture, beds, sofas, appliances, kitchen items, clothes and fragile decor with proper packing material, so your belongings arrive in the condition they left.",
@@ -115,6 +123,8 @@ const services: PageDef[] = [
     description:
       "Expert office and commercial shifting in Sagar, MP – planned packing and moving with minimal downtime. Shyam Packers and Movers, Makronia. Call 92432 00382.",
     icon: "building",
+    image: "/images/office-commercial-moving.jpg",
+    imageAlt: "Office and commercial shifting service in Sagar by Shyam Packers and Movers – planned relocation with minimal downtime",
     intro: [
       `Moving your office, clinic or shop? ${site.name} plans commercial relocation in Sagar so your business is back up quickly. We pack and move desks, chairs, cabinets, computers, files and stock with care.`,
       "Share your timing and layout needs and we will plan the move to keep disruption low — including after-hours or weekend shifting where possible.",
@@ -149,6 +159,8 @@ const services: PageDef[] = [
     description:
       "Fast and affordable local shifting in Sagar, MP – house and office relocation within the city. Shyam Packers and Movers, Makronia. Call 92432 00382.",
     icon: "home",
+    image: "/images/packers-movers-local-area.jpg",
+    imageAlt: "Local shifting service in Sagar by Shyam Packers and Movers – quick and affordable same-city house and office relocation",
     intro: [
       `Need to move within Sagar city? ${site.name} provides quick and efficient local shifting services for homes and businesses. Whether you are shifting to a new colony or just across the street, we handle it professionally.`,
       "Our local team knows Sagar inside out — from Makronia to Bina Road, from Gola Bazaar to Dhawai Bazaar. We plan the move quickly and execute it smoothly.",
@@ -183,6 +195,8 @@ const services: PageDef[] = [
     description:
       "Trusted domestic relocation services from Sagar to any city in India – safe packing, secure transport and timely delivery. Shyam Packers and Movers. Call 92432 00382.",
     icon: "route",
+    image: "/images/domestic-relocation-service-india.jpg",
+    imageAlt: "Domestic relocation service from Sagar to all India by Shyam Packers and Movers – pan-India household goods shifting",
     intro: [
       `Relocating to another city? ${site.name} provides professional domestic relocation services from Sagar to any destination in India. We handle your household goods with care and ensure timely delivery.`,
       "From Sagar to Bhopal, Delhi, Mumbai, Bangalore or any other city — we plan the route, pack securely, load carefully and deliver safely to your new home.",
@@ -217,6 +231,8 @@ const services: PageDef[] = [
     description:
       "Safe and reliable car transportation from Sagar to any city in India – secure loading, insured transport and timely delivery. Shyam Packers and Movers. Call 92432 00382.",
     icon: "truck",
+    image: "/images/stress-free-relocation.jpg",
+    imageAlt: "Car transportation service from Sagar by Shyam Packers and Movers – safe and reliable vehicle transport across India",
     intro: [
       `Need to transport your car from Sagar? ${site.name} provides safe and professional car transportation services to any destination in India. We use specialized car carriers and ensure your vehicle reaches in the same condition it left.`,
       "Whether you are relocating to another city or need to send your car to a family member, we handle all types of vehicles — cars, SUVs, bikes and more.",
@@ -251,6 +267,8 @@ const services: PageDef[] = [
     description:
       "Professional bike and two-wheeler transportation from Sagar to any city – safe packing, secure loading and timely delivery. Shyam Packers and Movers. Call 92432 00382.",
     icon: "truck",
+    image: "/images/house-shifting-loading.jpg",
+    imageAlt: "Bike transportation service from Sagar by Shyam Packers and Movers – secure packing and safe loading of two-wheelers",
     intro: [
       `Want to transport your bike from Sagar? ${site.name} provides reliable bike transportation services across India. We pack your bike securely and transport it safely to your destination.`,
       "Whether you are relocating or sending your bike to someone, we handle all types of two-wheelers — bikes, scooters, motorcycles of all brands and models.",
@@ -285,6 +303,8 @@ const services: PageDef[] = [
     description:
       "Professional packing and unpacking services in Sagar, MP – quality materials, trained staff and careful handling. Shyam Packers and Movers, Makronia. Call 92432 00382.",
     icon: "package",
+    image: "/images/furniture-packing-protection.jpg",
+    imageAlt: "Professional packing and unpacking service in Sagar by Shyam Packers and Movers – furniture wrapped with protective material",
     intro: [
       `Need help with packing and unpacking? ${site.name} provides professional packing services in Sagar using high-quality materials and proven techniques. We pack everything from kitchen items to furniture, electronics to fragile decor.`,
       "Our trained staff use appropriate packing materials for each item type — cartons, bubble wrap, packing paper, tape and more. We ensure your belongings are protected during the move.",
@@ -319,6 +339,8 @@ const services: PageDef[] = [
     description:
       "Goods transport in Sagar, MP by Shyam Packers and Movers – local and intercity transport for household goods, shop stock and commercial loads. Call 92432 00382.",
     icon: "bus",
+    image: "/images/express-packers-movers-india.jpg",
+    imageAlt: "Goods transport service in Sagar by Shyam Packers and Movers – express local and intercity transport for household and commercial goods",
     intro: [
       `${site.name} provides dependable transport in Sagar for household goods, shop and business stock, furniture and bulky items — within the city, to nearby towns and on long routes across India.`,
       "Tell us what you are moving and where it has to go. We suggest the right vehicle, give you a clear price and deliver safely and on schedule.",
@@ -353,6 +375,8 @@ const services: PageDef[] = [
     description:
       "Rent a truck in Sagar, MP – dedicated and shared truck rental for house shifting and goods transport, local and all India. Shyam Packers and Movers: 92432 00382.",
     icon: "truck",
+    image: "/images/international-moving-services.jpg",
+    imageAlt: "Truck rental service in Sagar by Shyam Packers and Movers – dedicated and shared trucks for house shifting and goods transport",
     intro: [
       `Need a truck on rent in Sagar? ${site.name} offers dedicated and shared truck rental for house shifting, shop relocation and goods transport — local runs and long-distance trips.`,
       "Choose a full dedicated vehicle for complete privacy and flexibility, or share space to save cost on smaller loads. We help you pick what fits.",
@@ -387,6 +411,8 @@ const services: PageDef[] = [
     description:
       "Safe house shifting in Sagar, MP – packing, loading, transport and unloading for 1BHK to large homes. Shyam Packers and Movers, Makronia. Call 92432 00382.",
     icon: "home",
+    image: "/images/house-shifting-professional.jpg",
+    imageAlt: "Safe house shifting service in Sagar by Shyam Packers and Movers – complete packing, loading and transport for homes of all sizes",
     intro: [
       `Moving home should not be stressful. ${site.name} takes care of your house shifting in Sagar from start to finish — packing every room, loading carefully, transporting safely and unloading at your new home.`,
       "We handle furniture, beds, sofas, appliances, kitchen items, clothes and fragile decor with proper packing material, so your belongings arrive in the condition they left.",
@@ -421,6 +447,8 @@ const services: PageDef[] = [
     description:
       "Office, shop and commercial shifting in Sagar, MP – planned packing and moving with minimum downtime. Shyam Packers and Movers, Makronia. Call 92432 00382.",
     icon: "building",
+    image: "/images/office-commercial-moving.jpg",
+    imageAlt: "Office and shop shifting service in Sagar by Shyam Packers and Movers – planned commercial relocation with minimal business downtime",
     intro: [
       `Moving your office, clinic or shop? ${site.name} plans commercial relocation in Sagar so your business is back up quickly. We pack and move desks, chairs, cabinets, computers, files and stock with care.`,
       "Share your timing and layout needs and we will plan the move to keep disruption low — including after-hours or weekend shifting where possible.",
@@ -455,6 +483,8 @@ const services: PageDef[] = [
     description:
       "Professional packing, loading and unloading in Sagar, MP – trained labour and quality packing material. Shyam Packers and Movers, Makronia. Call 92432 00382.",
     icon: "package",
+    image: "/images/furniture-packing-protection.jpg",
+    imageAlt: "Packing, loading and unpacking service in Sagar by Shyam Packers and Movers – professional furniture wrapping and safe loading",
     intro: [
       `Already have a vehicle? ${site.name} can provide just the packing, loading and unloading — trained staff and proper packing material, so your goods are handled safely at both ends.`,
       "Good packing is the difference between a smooth move and broken belongings. We use suitable material for each item and load in a way that keeps everything secure in transit.",
@@ -489,6 +519,8 @@ const services: PageDef[] = [
     description:
       "Long-distance relocation from Sagar to any city in India – packing, transport and unloading by Shyam Packers and Movers, Makronia. Call 92432 00382 for a quote.",
     icon: "route",
+    image: "/images/domestic-relocation-service-india.jpg",
+    imageAlt: "Long distance and pan-India relocation service from Sagar by Shyam Packers and Movers – secure packing and door-to-door delivery across India",
     intro: [
       `Relocating out of Sagar? ${site.name} moves households and businesses from Sagar to cities across India — with careful packing, secure loading and planned delivery.`,
       "Share your destination and moving date and we will give you a clear quote. We coordinate the route so your goods reach the new address safely.",
@@ -542,6 +574,8 @@ const areas: PageDef[] = areaList.map((a) => {
       route ? `between Sagar and ${a.name}` : `in ${a.name}`
     }. Call 92432 00382 for a free quote.`,
     icon: "pin",
+    image: "/images/packers-movers-local-area.jpg",
+    imageAlt: `Packers and movers in ${a.name} by Shyam Packers and Movers, Makronia Sagar – house shifting, packing and transport service`,
     intro: [
       `Need packers and movers in ${a.name}? ${site.name}, based in ${site.address.locality}, ${site.address.city}, offers house shifting, office shifting, packing, loading, unloading and truck rental ${
         route ? `for moves between Sagar and ${a.name}` : `in ${a.name} and around`
